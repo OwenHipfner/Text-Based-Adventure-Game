@@ -2,7 +2,10 @@
 # Adventure game menu
 # CS 30
 # 10/20/2021
-from numpy import *
+try:
+    from numpy import *
+except ModuleNotFoundError:
+    print("Error")
 
 player_maps = array("""
 --------------Police Precinct--------------
@@ -26,7 +29,7 @@ player_maps = array("""
 | tile | tile | tile | tile |
 +------+------+------+------+
 | Enemy| Heal | Enemy| Heal |
-| tile | tile | tilke| tile |
+| tile | tile | tile | tile |
 +------+------+------+------+
 
 --------------Sal's Pizza------------------

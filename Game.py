@@ -2,15 +2,19 @@
 # Adventure game menu
 # CS 30
 # 9/20/2021
+try:
+    from numpy import *
+    import Inventory as Inv
+    import Characters as Cha
+    import Locations as Loc
+    import Map as Ma
+except ModuleNotFoundError:
+    print("Error")
+else:
+    print("All Moduels/Files printed succesfully")
 
-from numpy import *
-import Inventory as Inv
-import Characters as Cha
-import Locations as Loc
-import Map as Ma
 
-
-print(''' In the menu you can chose what action your character can
+print('''\n In the menu you can chose what action your character can
  do in game.
  The choices are:
  Move forward with 'W'
@@ -28,7 +32,7 @@ a = 1
 while a == 1:
     # This while command is used to loop the code
     # Until the user quits the menu.
-    user_input = str(input("Choose your action: "))
+    user_input = str(input("\nChoose your action: "))
 
     if user_input == "W":
         # User input will print the message on the console
