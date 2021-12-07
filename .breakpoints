@@ -1,0 +1,20 @@
+{
+  "files": {
+    "Characters.py": [
+      {
+        "id": "df3f18ae-2e29-4a22-a0d4-4d85dfb264dc",
+        "line": 7,
+        "version": 876,
+        "index": 60
+      }
+    ],
+    "Inventory.py": [
+      {
+        "id": "a0e716c9-2c31-4efd-adc8-aa7530c7cd12",
+        "line": 28,
+        "version": 964,
+        "index": 898
+      }
+    ]
+  }
+}

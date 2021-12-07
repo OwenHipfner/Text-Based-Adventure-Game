@@ -3,20 +3,30 @@
 # CS 30
 # 10/20/2021
 
-characters = {"Jake Peralta": {"Description": "A Officer who defends Brooklyn",
-                               "Health": 200, "Attack": 35},
-              "The Vulture":
-                              {"Description": "A Dectective that steals cases",
-                               "Health": 250, "Attack": 45},
-              "Amy Santiago":
-                              {"Description": "The spouse of Jake Peralta",
-                               "Health": 195, "Attack": 30}
-              }
+
+class Character():
+    def __init__(
+        self,
+        name,
+        description,
+        health,
+        damage,
+    ):
+        self.name = name
+        self.description = description
+        self.health = health
+        self.damage = damage
+
+
+Jakeperalta = Character("Jake Peralta", "A Officer who defends Brooklyn", 20,
+                        10)
 
 
 def playerCha():
-    print("Characters ")
-    for people in characters:
-        print(f"{people}: ")
-        for item in characters[people]:
-            print(f"{item} - {characters[people][item]}")
+    print(f"\n__Your_Character__")
+    print(Jakeperalta.name)
+    print(Jakeperalta.description)
+    print("Jake's Health:")
+    print(Jakeperalta.health)
+    print("Jake's Damage:")
+    print(Jakeperalta.damage)

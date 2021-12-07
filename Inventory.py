@@ -3,6 +3,16 @@
 # CS 30
 # 10/20/2021
 
+inventory = {
+    "Jake Peralta": {
+        "Standard Police Handgun": {
+            "Description": "Standard issue gun from police",
+            "Damage": 10,
+            "Armour": 0
+        },
+    }
+}
+
 
 def player_inventory(player, inventory):
     # Defining to print third dictionary properly
@@ -21,33 +31,8 @@ def player_inventory(player, inventory):
             weapons.append(item)
     return armoured_items, weapons
 
-inventory = {"Jake Peralta": {"Standard Police Handgun":
-                              {"Description": "Standard issue gun from police",
-                               "Damage": 10, "Armour": 0},
-                              "Armour vest":
-                              {"Description": "Gives protection when worn",
-                               "Damage": 0, "Armour": 100}},
-             "The Vulture": {"Standard Police Handgun":
-                             {"Description": "Standard issue gun from police",
-                              "Damage": 10, "Armour": 0},
-                             "Armour vest":
-                             {"Description": "Gives protection when worn",
-                              "Damage": 0, "Armour": 100}},
-             "Amy Santiago": {"Standard Police Handgun":
-                              {"Description": "Standard issue gun from police",
-                               "Damage": 10, "Armour": 0},
-                              "Armour vest":
-                              {"Description": "Gives protection when worn",
-                               "Damage": 0, "Armour": 100},
-                              "Pepper spary":
-                              {"Description": "Blinds enemy at close range",
-                               "Damage": 15, "Armour": 0}}}
-
 
 def playerINV():
     print("Inventory ")
+    print("\n")
     player_inventory("Jake Peralta", inventory)
-    print("\n")
-    player_inventory("The Vulture", inventory)
-    print("\n")
-    player_inventory("Amy Santiago", inventory)

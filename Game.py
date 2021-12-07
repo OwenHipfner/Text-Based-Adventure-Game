@@ -8,47 +8,35 @@ try:
     import Characters as Cha
     import Locations as Loc
     import Map as Ma
+    from Characters import Character
+    from Map import Movement, damage_2_Character, damage_2_Enemy, adds_health
+    from Map import Tile, Enemy, Heal, Start, Finish
 except ModuleNotFoundError:
     print("Error")
 else:
     print("All Moduels/Files printed succesfully")
 
+print('''\n
+In the menu you can chose see what your character \
+can do in game and where he will be.
 
-print('''\n In the menu you can chose what action your character can
- do in game.
- The choices are:
- Move forward with 'W'
- Move to the left with 'A'
- Move backwards with 'S'
- Move to the right with 'D'
- For Characters use 'C'
- For Locations use 'L'
- For Inventory use 'I'
- For Map use 'M'
- If you want to leave the menu use 'Q' ''')
+The choices are:''')
 
 a = 1
 
 while a == 1:
     # This while command is used to loop the code
     # Until the user quits the menu.
+    print('''
+For Characters use 'C'
+For Locations use 'L'
+For Inventory use 'I'
+For Map use 'M'
+To Start the game use 'E'
+If you want to leave the menu use 'Q' ''')
     user_input = str(input("\nChoose your action: "))
 
-    if user_input == "W":
-        # User input will print the message on the console
-        # Then ask again what action the user will do.
-        print("You've moved forward!")
-
-    elif user_input == "A":
-        print("You've moved left!")
-
-    elif user_input == "S":
-        print("You've moved right")
-
-    elif user_input == "D":
-        print("You've moved backward")
-
-    elif user_input == "C":
+    if user_input == "C":
         # When 'C' is chosen it will print the characters
         Cha.playerCha()
 
@@ -62,6 +50,21 @@ while a == 1:
 
     elif user_input == "M":
         Ma.playerMap()
+
+    elif user_input == "E":
+        Jakeperalta = Character("Jake Peralta",
+                                "A Officer who defends Brooklyn", 20, 10)
+
+        Badguy = Enemy("Criminal", "Stole money from a shop", 5, 10)
+
+        Healthkit = Heal("Health kit", "Gives the player health", 5)
+
+        FinishArea = Finish("The Finish line", "Where the game ends Congrats!")
+
+        StartArea = Start("The Starting line",
+                          "This is where you start your journey")
+
+        Movement()
 
     elif user_input == "Q":
         print("Are you sure you want to Quit")

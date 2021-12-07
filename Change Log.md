@@ -18,3 +18,10 @@
 - Assignement "RPG: Exception Handling"
 - - Added a Try and Except function to make sure that the files and modules were transfering properly to the main file 
 - - If user has bad input will print a message that there was a invalid command 
+
+## Version 1.4
+## Map Classes And Moving From Tile to Tile
+- Assignement "RPG: Classes
+- - Added a way to move around the Map. 
+- - Made Classes for each tile on the map and each were given different traits.
+- - 

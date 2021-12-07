@@ -3,17 +3,16 @@
 # CS 30
 # 10/20/2021
 
-locations = {"Police Precinct": {"Description": "Precinct where \
-officers meet"},
-             "Shaw's bar":
-             {"Description": "The bar officers after a case"},
-             "Sal's pizza":
-             {"Description": "The Pizza shop that burnt down"}
-             }
+locations = {
+    "Police Precinct": {
+        "Description": "Precinct where \
+officers meet"
+    },
+}
 
 
 def playerLoc():
-    print("Locations ")
+    print("Location: ")
     for places in locations:
         print(f"{places}")
         for item in locations[places]:
